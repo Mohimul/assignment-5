@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Question section</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar bg-gray-100   lg:px-12">
+            <div class="flex-1">
+                <a class="btn btn-ghost normal-case text-xl">Logo</a>
+            </div>
+
+            <div class="flex-none gap-2">
+
+                <button id="home-btn" class="btn btn-primary" id="first-card">
+                    Home
+                </button>
+            </div>
+
+        </div>
+
+    </header>
+    <div class="all-questions p-12 mb-4">
+
+        <div class="div-1 mb-4">
+            <h3>1. what is DOM?</h3>
+            <p>DOM means Document Object Model. It is a interface of programming language. It is represent to change the structure of the webpage by style, structure and content etc. The DOM represents the document as nodes and objects; that way, programming languages can interact with the page </p>
+        </div>
+        <div class="div-1 mb-4">
+            <h3>2. How will you select HTML elements using DOM? Name the DOM methods.?</h3>
+            <p>I will select HTML element dom by using selectors <br>
+                1.getElementsByTagName() <br>
+                2.getElementsByClassName() <br>
+                3.getElementById() <br>
+                4.querySelector() and <br>
+                5.querySelectorAll().
+            
+            </p>
+        </div>
+        <div class="div-1 mb-4">
+            <h3>3.  What is event bubble?</h3>
+            <p>Event bubbling is a term you might have come across on your JavaScript travels. It relates to the order in which event handlers are called when one element is nested inside a second element, and both elements have registered a listener for the same event (a click, for example) </p>
+        </div>
+        <div class="div-1 ">
+            <h3>4.  What is a callback function and why will you use it?</h3>
+            <p>A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action. The above example is a synchronous callback, as it is executed immediately. </p>
+        </div>
+       
+
+    </div>
+
+    <script>
+        document.getElementById('home-btn').addEventListener('click', function () {
+            window.location.href = 'http://127.0.0.1:5500/index.html?'
+        })
+    </script>
+</body>
+
+</html>
